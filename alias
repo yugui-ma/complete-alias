@@ -1,0 +1,148 @@
+alias kdpk='kubectl describe pod -n kube-system'
+alias kdp='kubectl describe pod '
+alias kdpd='kubectl describe pod -n default'
+alias kdpc='kubectl describe pod -n custom-metrics'
+alias kdn='kubectl describe node'
+alias kddsk='kubectl describe ds -n kube-system'
+alias kddpk='kubectl describe deployment -n kube-system'
+
+alias kld='kubectl logs -n default --tail 20'
+alias kld2='kubectl logs -n default --tail 200'
+alias klc='kubectl logs -n custom-metrics --tail 20'
+alias klk='kubectl logs -n kube-system --tail 20'
+
+alias kek='kubectl exec -n kube-system -it'
+alias ked='kubectl exec -n default -it'
+alias kec='kubectl exec -n custom-metrics -it'
+
+alias kgp='kubectl get po'
+alias kgpw='kubectl get po -w'
+alias kgpd='kubectl get po'
+alias kgda='kubectl get deployment --all-namespaces'
+alias kgpa='kubectl get po --all-namespaces'
+alias kgpa2='kubectl get pod -o=custom-columns=Namespace:.metadata.namespace,NAME:.metadata.name,STATUS:.status.phase,NODE:.spec.nodeName --all-namespaces'
+alias kgca='kubectl get configmap --all-namespaces'
+alias kgn='kubectl get nodes'
+alias kgdsa='kubectl get ds --all-namespaces'
+
+alias kgpyd='kubectl get pod -n default -o yaml'
+alias kgpyk='kubectl get pod -n kube-system -o yaml'
+
+alias kdtpf='kubectl delete pod --force '
+alias kdtpd='kubectl delete pod -n default'
+alias kdtpk='kubectl delete pod -n kube-system'
+alias kdtdsk='kubectl delete ds -n kube-system'
+
+alias kcpk='kubectl -n kube-system cp'
+alias kcp='kubectl cp'
+
+
+alias kdpk='kubectl describe pod -n kube-system'
+alias kdpd='kubectl describe pod -n default'
+alias kdpc='kubectl describe pod -n custom-metrics'
+alias kdpv='kubectl describe pod -n volcano-system'
+
+alias kdn='kubectl describe node'
+alias kddsk='kubectl describe ds -n kube-system'
+alias kddpk='kubectl describe deployment -n kube-system'
+
+alias kld='kubectl logs -n default --tail 20'
+alias klc='kubectl logs -n custom-metrics --tail 20'
+alias klk='kubectl logs -n kube-system --tail 20'
+alias klv='kubectl logs -n volcano-system --tail 20'
+
+alias kek='kubectl exec -n kube-system -it'
+alias ked='kubectl exec -n default -it'
+alias kec='kubectl exec -n custom-metrics -it'
+
+alias kgp='kubectl get po'
+alias kgpw='kubectl get po -w'
+alias kgpd='kubectl get po'
+alias kgda='kubectl get deployment --all-namespaces'
+alias kgpa='kubectl get po --all-namespaces'
+alias kgpa2='kubectl get pod -o=custom-columns=Namespace:.metadata.namespace,NAME:.metadata.name,STATUS:.status.phase,NODE:.spec.nodeName --all-namespaces'
+alias kgca='kubectl get configmap --all-namespaces'
+alias kgn='kubectl get nodes'
+alias kgdsa='kubectl get ds --all-namespaces'
+
+alias kgpyd='kubectl get pod -n default -o yaml'
+alias kgpyk='kubectl get pod -n kube-system -o yaml'
+
+alias kdtpf='kubectl delete pod --force '
+alias kdtpd='kubectl delete pod -n default'
+alias kdtpk='kubectl delete pod -n kube-system'
+alias kdtpv='kubectl delete pod -n volcano-system'
+alias kdtdsk='kubectl delete ds -n kube-system'
+
+alias kcpk='kubectl -n kube-system cp'
+alias kcp='kubectl cp'
+complete -F _complete_alias kdpk
+complete -F _complete_alias kdp
+complete -F _complete_alias kdpd
+complete -F _complete_alias kdpc
+complete -F _complete_alias kdn
+complete -F _complete_alias kddsk
+complete -F _complete_alias kddpk
+complete -F _complete_alias kld
+complete -F _complete_alias kld2
+complete -F _complete_alias klc
+complete -F _complete_alias klk
+complete -F _complete_alias kek
+complete -F _complete_alias ked
+complete -F _complete_alias kec
+complete -F _complete_alias kgp
+complete -F _complete_alias kgpw
+complete -F _complete_alias kgpd
+complete -F _complete_alias kgda
+complete -F _complete_alias kgpa
+complete -F _complete_alias kgpa2
+complete -F _complete_alias kgca
+complete -F _complete_alias kgn
+complete -F _complete_alias kgdsa
+complete -F _complete_alias kgpyd
+complete -F _complete_alias kgpyk
+complete -F _complete_alias kdtpf
+complete -F _complete_alias kdtpd
+complete -F _complete_alias kdtpk
+complete -F _complete_alias kdtdsk
+complete -F _complete_alias kcpk
+complete -F _complete_alias kcp
+complete -F _complete_alias cddev
+complete -F _complete_alias kdpk
+complete -F _complete_alias kdpd
+complete -F _complete_alias kdpc
+complete -F _complete_alias kdpv
+complete -F _complete_alias kdn
+complete -F _complete_alias kddsk
+complete -F _complete_alias kddpk
+complete -F _complete_alias kld
+complete -F _complete_alias klc
+complete -F _complete_alias klk
+complete -F _complete_alias klv
+complete -F _complete_alias kek
+complete -F _complete_alias ked
+complete -F _complete_alias kec
+complete -F _complete_alias kgp
+complete -F _complete_alias kgpw
+complete -F _complete_alias kgpd
+complete -F _complete_alias kgda
+complete -F _complete_alias kgpa
+complete -F _complete_alias kgpa2
+complete -F _complete_alias kgca
+complete -F _complete_alias kgn
+complete -F _complete_alias kgdsa
+complete -F _complete_alias kgpyd
+complete -F _complete_alias kgpyk
+complete -F _complete_alias kdtpf
+complete -F _complete_alias kdtpd
+complete -F _complete_alias kdtpk
+complete -F _complete_alias kdtpv
+complete -F _complete_alias kdtdsk
+complete -F _complete_alias kcpk
+complete -F _complete_alias kcp
+alias kg='kubectl get'
+complete -F _complete_alias kg
+alias kl='kubectl logs'
+complete -F _complete_alias kl
+alias kd='kubectl describe'
+complete -F _complete_alias kd
